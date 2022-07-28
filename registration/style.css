@@ -1,0 +1,47 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+body{
+    background-image: url('bg-intro-desktop.png');
+    font-size: 16px;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    justify-content: center;
+    float: left;
+    width: 50%;
+    padding: 140px 0 40px 200px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+   
+   .column1 {
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 40%;
+    padding: 10px 180px 10px 10px;
+    height: 400px; 
+    background-color: white;
+  }
+  .col {
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 50%;
+    padding: 10px 180px 10px 10px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media only screen and (max-width: 1440px) {
+    .column {
+      width: 50%;
+    }
+  }
